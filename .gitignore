@@ -34,3 +34,4 @@ target/
 !**/src/main/**
 !**/src/test/**
 
+/.mvn/wrapper/

@@ -7,7 +7,7 @@ import org.springframework.data.samplespringdatacustomrepositories.domain.Compan
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "crud-company", path = "crud-company")
+@RepositoryRestResource(collectionResourceRel = "crud-companies", path = "crud-companies")
 public interface CrudCompanyRepository extends CrudRepository<Company, Long> {
     List<Company> findByName(@Param("name") String name);
 }
