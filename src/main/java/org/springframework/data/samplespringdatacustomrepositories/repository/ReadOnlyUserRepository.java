@@ -7,7 +7,7 @@ import org.springframework.data.samplespringdatacustomrepositories.domain.User;
 
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "ro-users", path = "ro-users")
+@RepositoryRestResource(collectionResourceRel = "users", path = "users")
 public interface ReadOnlyUserRepository extends ReadOnlyRepository<User, Long> {
     List<User> findByName(@Param("name") String name);
 }
